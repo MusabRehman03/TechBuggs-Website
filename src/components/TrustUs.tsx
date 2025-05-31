@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import sampathLogo from '../assets/sampath-logo.png';
 import adclipseLogo from '../assets/adclipse-logo.png';

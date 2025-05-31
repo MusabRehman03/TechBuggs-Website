@@ -1,6 +1,4 @@
-import React from "react";
 import { Element } from "react-scroll";
-import { FaCode } from "react-icons/fa";
 import codeIcon from "../assets/codeIcon.png";
 import mobileIcon from "../assets/mobileIcon.png";
 import laptopIcon from "../assets/laptopIcon.png";
