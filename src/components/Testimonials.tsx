@@ -2,11 +2,11 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { RiSingleQuotesL } from "react-icons/ri";
 import { RiSingleQuotesR } from "react-icons/ri";
-import testimonialPic5 from "src/assets/testimonialPic5.png";
-import testimonialPic3 from "src/assets/testimonialPic3.png";
-import workingWithUsPic1 from "src/assets/workingWithUsPic1.jpg";
-import testimonialPic4 from "src/assets/testimonialPic4.png";
-import testimonialPic2 from "src/assets/testimonialPic2.png";
+import testimonialPic5 from "../assets/testimonialPic5.png";
+import testimonialPic3 from "../assets/testimonialPic3.png";
+import workingWithUsPic1 from "../assets/workingWithUsPic1.jpg";
+import testimonialPic4 from "../assets/testimonialPic4.png";
+import testimonialPic2 from "../assets/testimonialPic2.png";
 const testimonialsData = [
   {
     id: 0,
