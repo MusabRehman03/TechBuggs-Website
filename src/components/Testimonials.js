@@ -3,43 +3,49 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { RiSingleQuotesL } from "react-icons/ri";
 import { RiSingleQuotesR } from "react-icons/ri";
+import testimonialPic5 from "../assets/testimonialPic5.png";
+import testimonialPic3 from "../assets/testimonialPic3.png";
+import workingWithUsPic1 from "../assets/workingWithUsPic1.jpg";
+import testimonialPic4 from "../assets/testimonialPic4.png";
+import testimonialPic2 from "../assets/testimonialPic2.png";
 const testimonialsData = [
     {
-        id: 0,
-        text: "Alcaline Solutions has been a game-changer for our business. Their web design and digital marketing expertise have significantly boosted our online presence and sales.",
-        name: "Romeena De Silva",
-        company: "Janet Cosmetics",
-        img: "/assets/testimonialPic5.png",
+      id: 0,
+      text: "Alcaline Solutions has been a game-changer for our business. Their web design and digital marketing expertise have significantly boosted our online presence and sales.",
+      name: "Romeena De Silva",
+      company: "Janet Cosmetics",
+      img: testimonialPic5
+    },
+  
+    {
+      id: 1,
+      text: "Working with Alcaline Solutions has been a pleasure. Their team is professional, responsive, and delivers high-quality work on time.",
+      name: "Romeena De Silva",
+      company: "Janet Cosmetics",
+      img: testimonialPic3,
     },
     {
-        id: 1,
-        text: "Working with Alcaline Solutions has been a pleasure. Their team is professional, responsive, and delivers high-quality work on time.",
-        name: "Romeena De Silva",
-        company: "Janet Cosmetics",
-        img: "/assets/testimonialPic3.png",
+      id: 2,
+      text: "Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I've come across so far. Wouldn't be hesitated to introduce their work to someone else.",
+      name: "Imran Khan",
+      company: "Software Engineer",
+      img: workingWithUsPic1
     },
     {
-        id: 2,
-        text: "Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I've come across so far. Wouldn't be hesitated to introduce their work to someone else.",
-        name: "Imran Khan",
-        company: "Software Engineer",
-        img: "/assets/workingWithUsPic1.jpg",
+      id: 3,
+      text: "I can't recommend Alcaline Solutions enough. Their attention to detail and commitment to excellence is unmatched in the industry.",
+      name: "Romeena De Silva",
+      company: "Janet Cosmetics",
+      img: testimonialPic4,
     },
     {
-        id: 3,
-        text: "I can't recommend Alcaline Solutions enough. Their attention to detail and commitment to excellence is unmatched in the industry.",
-        name: "Romeena De Silva",
-        company: "Janet Cosmetics",
-        img: "/assets/testimonialPic4.png",
+      id: 4,
+      text: "Alcaline Solutions transformed our website and helped us reach a wider audience. Their digital marketing strategies are top-notch.",
+      name: "Romeena De Silva",
+      company: "Janet Cosmetics",
+      img: testimonialPic2
     },
-    {
-        id: 4,
-        text: "Alcaline Solutions transformed our website and helped us reach a wider audience. Their digital marketing strategies are top-notch.",
-        name: "Romeena De Silva",
-        company: "Janet Cosmetics",
-        img: "/assets/testimonialPic2.png",
-    },
-];
+  ];
 export default function CustomerTestimonials() {
     const [currentSlide, setCurrentSlide] = useState(2);
     const nextSlide = () => {
