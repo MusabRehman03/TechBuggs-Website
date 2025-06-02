@@ -31,10 +31,10 @@ const CompanySection = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-[#45BCA0] to-[#346197]"></div>
             
             <div className="space-y-4">
-              <h2 className="text-4xl lg:text-5xl  text-gray-900 leading-tight">
+              <h2 className="text-4xl   text-gray-900 leading-tight">
                 Leading companies trust us
               </h2>
-              <h3 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h3 className="text-4xl  font-bold text-gray-900 leading-tight">
                 to develop software
               </h3>
             </div>

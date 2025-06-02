@@ -8,7 +8,7 @@ export default function HeroSection() {
       <section className="pt-32 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-12">
           <div className="max-w-xl mb-10 space-y-6 text-center lg:text-left">
-            <h1 className="text-4xl lg:text-5xl font-extralight ">
+            <h1 className="text-4xl font-extralight ">
               Great <span className="text-[#77BA9F] font-semibold">Product</span> is
               <br />
               <h1 className=" font-extrabold">built by great 

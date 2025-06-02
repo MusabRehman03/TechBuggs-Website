@@ -1,36 +1,81 @@
 import { Element } from "react-scroll";
-
+import caseStudies1 from "../assets/caseStudies1.jpg";
+import caseStudies3 from "../assets/caseStudies3.jpg";
+import caseStudies2 from "../assets/caseStudies2.jpg";
+import arrowBottom from "../assets/arrowBottom.png";
+import arrowUp from "../assets/arrowUp.png"
+import { ChevronRight } from "lucide-react";
+import {useMediaQuery} from "react-responsive";
 export default function CaseStudies() {
-  return (
-    <Element name="case-studies" className="py-20 bg-white">
-      
-    <div className="max-w-7xl mx-auto px-4">
-      <div className="text-center mb-16">
-        <h2 className="text-xl font-medium text-[#2F4A88] uppercase tracking-wider">Our recent</h2>
-        <h3 className="text-3xl font-bold text-[#2F4A88]">Case studies</h3>
-      </div>
 
-      <div className="space-y-12">
-        {["blue", "green", "pink"].map((color, i) => (
-          <div key={i} className={`rounded-lg flex flex-col lg:flex-row items-center lg:items-start gap-6 bg-${color}-100 p-6`}>
-            <div className="flex-shrink-0">
-              <img src={`/case-study-${i + 1}.png`} alt="Case Study" className="w-64 rounded-md" />
+  const caseStudies = [
+    {
+      id: 1,
+      title: "Website Design for SCFC Canada",
+      description:
+        "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+      image: caseStudies1,
+      bg:"bg-[#F1F2FF]",
+    },
+    {
+      id: 2,
+      title: "Website Design for SCFC Canada",
+      description:
+        "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+      image: caseStudies2,
+      bg:"bg-[#F0FFF7]",
+    },
+    {
+      id: 3,
+      title: "Website Design for SCFC Canada",
+      description:
+        "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+      image: caseStudies3,
+      bg:"bg-[#FFF4F4]",
+    },
+  ];
+  const isMobile = useMediaQuery({ maxWidth: 940 });
+  const is1371 = useMediaQuery({ minWidth: 1371 });
+  return (
+    <Element name="case-studies" className="  bg-[#F9F9FF]">
+      <img src={arrowBottom} alt="" className={`${!is1371&&"hidden"} h-50 relative -top-10 left-[75rem]`}/>
+      <img src={arrowUp} alt="" className={`${!is1371&&"hidden"} h-50 relative -top-60 left-[8rem]`}/>
+
+      <div className={ `w-full flex justify-center ${is1371?"-mt-72 pb-10":"p-10 "} `}>
+        
+      <div className={`${!is1371&&"hidden"} w-5 h-5 relative -top-[2rem] -left-[10rem] rounded-full bg-gradient-to-r from-[#45BCA0] to-[#346197]`}></div>
+
+      <div className="w-16 h-1 bg-gradient-to-r from-[#45BCA0] to-[#346197]"></div>
+      </div>
+      <div className="flex space-y-3 flex-col justify-center pb-10 items-center">
+        <h1 className="text-4xl">Our Recent</h1>
+        <h1 className="text-4xl font-bold">Case Studies</h1>
+      </div>
+      <div className="w-full flex flex-col justify-center items-center p-10 ">
+      <div className=" space-y-5">
+        {caseStudies.map((caseStudy) => (
+          <div className={`flex p-4 ${caseStudy.bg} ${isMobile&& "flex-col"} max-w-6xl rounded-2xl`}>
+            <div className="rounded-4xl flex  items-center ">
+              <img src={caseStudy.image} alt=""  className=""/>
             </div>
-            <div>
-              <h4 className="text-xl font-semibold text-[#2F4A88]">Website Design for SCFC Canada</h4>
-              <p className="mt-2 text-gray-600 text-sm">
-                Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. is striving to deliver the best services in the shipping and logistics sectors.
-              </p>
-              <a href="#" className="text-[#77BA9F] text-sm font-semibold inline-block mt-2">Read more</a>
+            <div className="p-10">
+              <div >
+                <h2 className={`${isMobile?"text-sm":"text-2xl"}  font-semibold`}>{caseStudy.title}</h2>
+                <p className={`${isMobile&&"text-xs"} `}>{caseStudy.description}</p>
+              </div>
+              <div className="mt-10  flex justify-end">
+                <h1 className=" bg-gradient-to-r from-[#45BCA0] to-[#346197] bg-clip-text text-transparent">Read More</h1>
+                <ChevronRight className="text-[#346197] "/>
+              </div>
             </div>
           </div>
         ))}
       </div>
-
-      <div className="text-right mt-8">
-        <a href="#" className="text-[#2F4A88] font-medium hover:underline">Read more case studies →</a>
       </div>
-    </div>
+      <div className="w-full flex justify-end items-center  px-20 py-10">
+        <div className=" bg-gradient-to-r from-[#45BCA0] to-[#346197] bg-clip-text text-transparent">Read More Case Studies</div>
+        <ChevronRight className="text-[#346197] ml-2" />
+        </div>
     </Element>
   );
 }

@@ -85,10 +85,10 @@ export default function CustomerTestimonials() {
       <div className="max-w-6xl w-full">
         <div className="text-center mb-16">
           <div className="w-12 h-1 bg-gradient-to-r from-[#45BCA0] to-[#346197] mx-auto mb-8"></div>
-          <h1 className="text-4xl md:text-5xl text-gray-800 mb-2">
+          <h1 className="text-4xl  text-gray-800 mb-2">
             Why customers love
           </h1>
-          <h1 className="text-4xl md:text-5xl font-semibold text-gray-800">
+          <h1 className="text-4xl  font-semibold text-gray-800">
             working with us
           </h1>
         </div>
