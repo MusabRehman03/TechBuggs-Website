@@ -14,7 +14,9 @@ import PreviousProjects from "./components/PreviousProjects";
 import DevelopmentApproach from "./components/DevelopmentApproach";
 import TechStack from "./components/TechStack";
 import FeaturedResources from "./components/FeaturedResources";
-// import 'swiper/css/bundle';
+import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
+
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 940 });
 
@@ -22,10 +24,10 @@ function App() {
     <div className="">
       <NavBar />
       <HeroSection />
+      <AboutUs />
       <OurServices />
       <TrustUs />
       {isMobile ? <TestimonialsMobile /> : <Testimonials />}
-
       <CaseStudies />
       <PreviousProjects />
       <DevelopmentApproach />
@@ -33,6 +35,7 @@ function App() {
       <TimelineSmall />
       <FeaturedResources />
       <Hire />
+      <ContactUs />
       <Footer />
     </div>
   );
