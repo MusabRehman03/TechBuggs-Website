@@ -33,10 +33,10 @@ export default function ContactUs() {
       };
 
       await emailjs.send(
-        'service_r5gw7te',   
-        'template_00m8zsq',   
+        'service_p4pih1g',   
+        'template_40n59xm',   
         templateParams,
-        'UarXK4uvaHrQWIL9z'     
+        'BqcNqUb6CG2PY2Q_f'     
       );
 
       setSubmitStatus({
