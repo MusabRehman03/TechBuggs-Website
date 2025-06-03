@@ -48,7 +48,7 @@ export default function ServicesSection() {
     <Element name="services">
       <section className="py-20 relative z-10 bg-[#F9F9FF]">
         <div className="px-4 text-center">
-          <h2 className="text-4xl font-bold mb-16">Services We Offer</h2>
+          <h2 className="text-4xl font-bold mb-16">Services</h2>
           <div className="flex flex-wrap justify-center gap-6 cursor-pointer h-full">
             {services.map((service) => (
               <div 
