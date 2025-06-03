@@ -14,8 +14,6 @@ import PreviousProjects from "./components/PreviousProjects";
 import DevelopmentApproach from "./components/DevelopmentApproach";
 import TechStack from "./components/TechStack";
 import FeaturedResources from "./components/FeaturedResources";
-import ContactUs from "./components/ContactUs";
-
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 940 });
 
