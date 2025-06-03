@@ -1,9 +1,9 @@
 import { Element } from "react-scroll";
 import { Users, Target, Award, Heart, Lightbulb, Zap } from "lucide-react";
-import { useMediaQuery } from "react-responsive";
+
 
 export default function AboutUs() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+
 
   const values = [
     {
