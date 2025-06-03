@@ -25,12 +25,14 @@ export default function ContactUs() {
     setSubmitStatus({ type: null, message: '' });
 
     try {
+    
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
       };
+     
 
       await emailjs.send(
         'service_p4pih1g',   
