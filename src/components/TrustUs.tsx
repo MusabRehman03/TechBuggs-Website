@@ -5,8 +5,7 @@ import pjcLogo from '../assets/pjc-logo.png';
 import clickorderLogo from '../assets/clickorder-logo.png';
 import techmateLogo from '../assets/techmate-logo.png';
 import projectgama from '../assets/projectgama.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+
 
 
 const companies = [
@@ -100,39 +99,22 @@ const CompanySection = () => {
       <div className="lg:block hidden relative top-3 left-[60rem] w-16 h-16 bg-gradient-to-t from-[#45BCA0] to-[#346197] rounded-full"></div>
       
 
-      <div className="relative bg-[#F9F9FF] py-12 -mt-6">
-      <div className="container mx-auto px-6">
-        <Swiper
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-          }}
-          slidesPerView={'auto'}
-          centeredSlides={true}
-          spaceBetween={30}
-          breakpoints={{
-            640: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
-          }}
-          className="!overflow-visible" // Important for custom layouts
-        >
-          {companies.map((company, index) => (
-            <SwiperSlide key={index} className="!w-auto">
+      <div className=" bg-[#F9F9FF] w-full mb-12">
+      <div className="flex overflow-x-auto scrollbar-hide md:flex-wrap md:justify-center gap-8 pb-4 pl-4 pr-4">
+        
+          {companies.map((company) => (
+            
               <div className="flex justify-center px-4">
                 <img 
                   src={company.logo} 
                   alt={company.name}
                   className="h-8 lg:h-10 object-contain max-w-[120px]"
-                  loading="lazy"
+                 
                 />
               </div>
-            </SwiperSlide>
+           
           ))}
-        </Swiper>
+
       </div>
     </div>
     </section>

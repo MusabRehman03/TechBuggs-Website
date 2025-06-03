@@ -119,7 +119,7 @@ export default function PreviousProjects() {
                     <div className="absolute -bottom-6 right-36 w-12 h-12 bg-gradient-to-t from-[#45BCA0] to-[#346197]  rounded-full z-0"></div>
                   </>
                 )}
-                {index === 1 && <div className="absolute -bottom-8 left-80 w-16 h-16 bg-gradient-to-t from-[#45BCA0] to-[#346197]  rounded-full z-0"></div>}
+                {index === 1 && <div className="md:block hidden absolute -bottom-8 left-80 w-16 h-16 bg-gradient-to-t from-[#45BCA0] to-[#346197]  rounded-full z-0"></div>}
                 {index === 2 && (
                   <div className="absolute -bottom-6 right-32 w-16 h-16 bg-gradient-to-t from-[#45BCA0] to-[#346197] rounded-full z-0"></div>
                 )}
