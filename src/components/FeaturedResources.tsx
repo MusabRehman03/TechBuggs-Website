@@ -35,7 +35,7 @@ const FeaturedResources = () => {
         <h2 className="text-4xl  ">Featured</h2>
         <h1 className="text-4xl font-bold ">Resources</h1>
       </div>
-      <div className="flex flex-wrap justify-center items-center ">
+      <div className="flex flex-wrap justify-center items-center p-5 ">
         {resources.map((resource) => (
           <div className="flex flex-col w-72 space-x-3">
             <div key={resource.id} className="mb-4">
