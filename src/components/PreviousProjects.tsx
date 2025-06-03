@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import project1 from "../assets/project1.jpg"
 import project2 from "../assets/project2.jpg"
 import project3 from "../assets/project3.jpg"
@@ -59,7 +60,7 @@ export default function PreviousProjects() {
     ]
   
     return (
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <Element name="projects" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col items-center space-y-3 mb-16">
         <div className="w-16 h-1 mb-10 bg-gradient-to-r from-[#45BCA0] to-[#346197]"></div>
@@ -135,7 +136,7 @@ export default function PreviousProjects() {
             </div>
           )
         })}
-      </div>
+      </Element>
     )
   }
   

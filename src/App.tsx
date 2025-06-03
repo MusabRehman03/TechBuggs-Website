@@ -24,7 +24,6 @@ function App() {
     <div className="">
       <NavBar />
       <HeroSection />
-      <AboutUs />
       <OurServices />
       <TrustUs />
       {isMobile ? <TestimonialsMobile /> : <Testimonials />}
@@ -35,6 +34,7 @@ function App() {
       <TimelineSmall />
       <FeaturedResources />
       <Hire />
+      <AboutUs />
       <ContactUs />
       <Footer />
     </div>

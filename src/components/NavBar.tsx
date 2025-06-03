@@ -21,12 +21,12 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
           <Link
-            to="about"
+            to="hero"
             smooth
             duration={500}
             className="cursor-pointer hover:text-[#77BA9F]"
           >
-            About us
+            Home
           </Link>
           <Link
             to="services"
@@ -52,14 +52,6 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          {/* <Link
-            to="blog"
-            smooth
-            duration={500}
-            className="cursor-pointer hover:text-[#77BA9F]"
-          >
-            Blog
-          </Link> */}
           <Link
             to="hire"
             smooth
@@ -68,15 +60,23 @@ export default function Navbar() {
           >
             Hire
           </Link>
+          <Link
+            to="about"
+            smooth
+            duration={500}
+            className="cursor-pointer hover:text-[#77BA9F]"
+          >
+            About us
+          </Link>
         </nav>
         
         {/* Desktop Contact Button */}
-        <Link to="contact">
-        <div className="hidden md:block">
-          <button className="bg-gradient-to-tr cursor-pointer from-[#2F4A88] to-[#77BA9F] text-white px-5 py-2 rounded-md hover:opacity-90 transition">
-            Contact us
-          </button>
-        </div>
+        <Link to="contact" smooth duration={500}>
+          <div className="hidden md:block">
+            <button className="bg-gradient-to-tr cursor-pointer from-[#2F4A88] to-[#77BA9F] text-white px-5 py-2 rounded-md hover:opacity-90 transition">
+              Contact us
+            </button>
+          </div>
         </Link>
 
         {/* Mobile Hamburger Button */}
@@ -92,16 +92,16 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden   transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[30rem] opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white shadow-lg`}>
-        <nav className="px-4   py-4 space-y-4">
+      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[30rem] opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white shadow-lg`}>
+        <nav className="px-4 py-4 space-y-4">
           <Link
-            to="about"
+            to="hero"
             smooth
             duration={500}
             className="block cursor-pointer hover:text-[#77BA9F] py-2 border-b border-gray-100"
             onClick={closeMenu}
           >
-            About us
+            Home
           </Link>
           <Link
             to="services"
@@ -131,15 +131,6 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
-            to="blog"
-            smooth
-            duration={500}
-            className="block cursor-pointer hover:text-[#77BA9F] py-2 border-b border-gray-100"
-            onClick={closeMenu}
-          >
-            Blog
-          </Link>
-          <Link
             to="hire"
             smooth
             duration={500}
@@ -148,13 +139,26 @@ export default function Navbar() {
           >
             Hire
           </Link>
-          <div className="w-full flex justify-center ">
-          <button 
-            className=" bg-gradient-to-tr from-[#2F4A88] to-[#77BA9F] text-white px-5 py-3 rounded-md hover:opacity-90 transition my-4"
+          <Link
+            to="about"
+            smooth
+            duration={500}
+            className="block cursor-pointer hover:text-[#77BA9F] py-2 border-b border-gray-100"
             onClick={closeMenu}
           >
-            Contact us
-          </button>
+            About us
+          </Link>
+          <div className="w-full flex justify-center">
+            <Link
+              to="contact"
+              smooth
+              duration={500}
+              onClick={closeMenu}
+            >
+              <button className="bg-gradient-to-tr from-[#2F4A88] to-[#77BA9F] text-white px-5 py-3 rounded-md hover:opacity-90 transition my-4">
+                Contact us
+              </button>
+            </Link>
           </div>
         </nav>
       </div>
