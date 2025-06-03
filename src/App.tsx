@@ -15,6 +15,8 @@ import DevelopmentApproach from "./components/DevelopmentApproach";
 import TechStack from "./components/TechStack";
 import FeaturedResources from "./components/FeaturedResources";
 import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
+
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 940 });
 
@@ -22,10 +24,10 @@ function App() {
     <div className="">
       <NavBar />
       <HeroSection />
+      <AboutUs />
       <OurServices />
       <TrustUs />
       {isMobile ? <TestimonialsMobile /> : <Testimonials />}
-
       <CaseStudies />
       <PreviousProjects />
       <DevelopmentApproach />
