@@ -20,14 +20,14 @@ export default function Navbar() {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
-          {/* <Link
+          <Link
             to="about"
             smooth
             duration={500}
             className="cursor-pointer hover:text-[#77BA9F]"
           >
             About us
-          </Link> */}
+          </Link>
           <Link
             to="services"
             smooth
@@ -71,11 +71,13 @@ export default function Navbar() {
         </nav>
         
         {/* Desktop Contact Button */}
+        <Link to="contact">
         <div className="hidden md:block">
           <button className="bg-gradient-to-tr cursor-pointer from-[#2F4A88] to-[#77BA9F] text-white px-5 py-2 rounded-md hover:opacity-90 transition">
             Contact us
           </button>
         </div>
+        </Link>
 
         {/* Mobile Hamburger Button */}
         <button 
